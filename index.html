@@ -1,2 +1,43 @@
-<h1>Мини-образовательный сайт</h1>
-<p>Привет, студенты! Сайт обновлён автоматически.</p>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CI/CD для студентов</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🚀 Мини-образовательный сайт</h1>
+    <p>Привет, студенты! Здесь мы учимся автоматизировать разработку.</p>
+    <button id="theme-toggle" type="button">🌙 Сменить тему</button>
+  </header>
+  <nav>
+    <a class="active" href="index.html">Главная</a>
+    <a href="pipeline.html">Как работает пайплайн</a>
+    <a href="quiz.html">Викторина</a>
+  </nav>
+  <main>
+    <section class="card">
+      <h2>Что такое CI/CD?</h2>
+      <p><strong>CI</strong> (Continuous Integration) — автоматическая проверка кода при каждом изменении.
+      <strong>CD</strong> (Continuous Delivery/Deployment) — автоматическая доставка проверенного кода на сайт.</p>
+    </section>
+    <section class="card">
+      <h2>Что использовано в проекте</h2>
+      <ul>
+        <li>Git и GitHub — хранение кода</li>
+        <li>GitHub Actions — автоматизация</li>
+        <li>HTMLHint — проверка качества HTML</li>
+        <li>GitHub Pages — бесплатный хостинг</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Счётчик посещений в браузере</h2>
+      <p>Вы заходили на сайт раз: <strong id="visits">0</strong></p>
+    </section>
+  </main>
+  <footer>Сделано студентом • Развёрнуто через GitHub Actions</footer>
+  <script src="script.js"></script>
+</body>
+</html>
